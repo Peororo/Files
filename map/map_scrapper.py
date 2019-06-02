@@ -114,5 +114,5 @@ for i in cat_len:
 driver.close()
 
 df = pd.DataFrame(cat_lst, columns = ['Category', 'Subcategory', 'Place', 'Address'])
-df.set_index('Category', inplace=True)
+df.set_index('Category', inplace = True)
 df.to_csv('ntumap.csv')
