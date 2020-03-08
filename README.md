@@ -1,4 +1,4 @@
-# NTU-scrapper
+# NTU-Classroom-Finder
 
 ENDGOAL: Create a telegram bot that shows empty classrooms available in NTU
 
