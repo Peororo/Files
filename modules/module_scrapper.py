@@ -70,8 +70,8 @@ for i, course in enumerate(courses):
                 timetable = pd.read_html(driver.find_elements_by_tag_name('table')[no].get_attribute('outerHTML'))[0]
                 
                 # replace 1st column as headers, NOTE: throws FutureWarning
-                timetable.columns = timetable.iloc[0]
-                timetable.drop([0], axis = 0, inplace = True)
+                # timetable.columns = timetable.iloc[0]
+                # timetable.drop([0], axis = 0, inplace = True)
 
                 # fill all na in INDEX and REMARK
                 timetable.fillna(method='ffill', inplace = True)
